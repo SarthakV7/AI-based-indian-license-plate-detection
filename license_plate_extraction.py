@@ -14,3 +14,4 @@ def extract_plate(img): # the function detects and perfors blurring on the numbe
 		cv2.rectangle(plate_img, (x,y), (x+w, y+h), (51,51,255), 3)
         
 	return plate_img, plate # returning the processed image.
+
