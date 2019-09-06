@@ -15,7 +15,7 @@ def segment_characters(image) :
     img_dilate[0:3,:] = 255
     img_dilate[:,0:3] = 255
     img_dilate[72:75,:] = 255
-    img_dilate[:,147:150] = 255
+    img_dilate[:,330:333] = 255
 
     # Estimations of character contours sizes of cropped license plates
     dimensions = [LP_WIDTH/6, LP_WIDTH/2, LP_HEIGHT/10, 2*LP_HEIGHT/3]
