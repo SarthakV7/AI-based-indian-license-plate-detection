@@ -2,7 +2,7 @@ def extract_plate(img): # the function detects and perfors blurring on the numbe
     plate_img = img.copy()
 	
 	#Loads the data required for detecting the license plates from cascade classifier.
-	plate_cascade = cv2.CascadeClassifier('./india_license_plate.xml')
+	plate_cascade = cv2.CascadeClassifier('./indian_license_plate.xml')
 	
 	# detects numberplates and returns the coordinates and dimensions of detected license plate's contours.
     plate_rect = plate_cascade.detectMultiScale(plate_img, scaleFactor = 1.3, minNeighbors = 7)
